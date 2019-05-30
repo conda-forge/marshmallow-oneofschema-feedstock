@@ -1,5 +1,5 @@
 {% set name = "marshmallow-oneofschema" %}
-{% set version = "2.0.0b2" %}
+{% set version = "2.0.0.post0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ca0464ffce7f442db2682e32b14ff1f8596dbee7ca97fe94fccc8e4c3cdc1343
+  sha256: 0c0eaee7a81ca02899e879f69582e738054c126a291ef2636b6b70e4e807aa5a
 
 build:
   noarch: python
