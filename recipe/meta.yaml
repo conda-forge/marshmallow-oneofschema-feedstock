@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
-    - python
-    - marshmallow >=3.0.0b12,<4.0.0
+    - python >=3.5
+    - marshmallow >=3.0.0rc6,<4.0.0
 
 test:
   imports:
