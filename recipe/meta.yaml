@@ -1,13 +1,13 @@
 {% set name = "marshmallow-oneofschema" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 62cd2099b29188c92493c2940ee79d1bf2f2619a71721664e5a98ec2faa58237
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 755bf89c326ba02ce7b0058165e34dfd72d00472e68d40ecb9470db9472bd79a
 
 build:
   noarch: python
@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
+    - flit-core <4
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - marshmallow >=3.0.0,<4.0.0
 
 test:
